@@ -32,11 +32,11 @@ function displayweather(){
            <h1>${weatherList.current.temp_c}<sup>o</sup>C</h1>
           </div>
             <div class="weatherIcon">
-              <img src="images/116.webp" alt="" class="w-100 ">
+              <img src="${weatherList.current.condition.icon}" alt="" class="w-100 ">
             </div>
           </div>
           <div class="weatherDesc ms-2">
-          ${weatherList.forecast.forecastday[0].day.condition.text}
+          ${weatherList.current.condition.text}
           </div>
           <div class="spans  p-2 d-flex justify-content-between w-75 mt-2 ">
             <span><img src="images/icon-umberella@2x.png" alt="" class="w-25 me-1">${weatherList.forecast.forecastday[0].day.daily_chance_of_rain}%</span>
@@ -55,7 +55,7 @@ function displayweather(){
       <div class="container text-center ">
         <div class="weatherNextDayContent d-flex flex-column">
           <div class="imgNextDay mt-2">
-            <img src="images/113.webp" alt="" class="col-2 my-3">
+            <img src="${weatherList.forecast.forecastday[1].day.condition.icon}" alt="" class="col-2 my-3">
             <h3 class="my-2 fw-bold">${weatherList.forecast.forecastday[1].day.maxtemp_c}<sup>o</sup>C</h3>
             <h6 class="my-3">${weatherList.forecast.forecastday[1].day.mintemp_c}<sup>o</sup></h6>
             <p class="my-4">${weatherList.forecast.forecastday[1].day.condition.text}</p>
@@ -73,7 +73,7 @@ function displayweather(){
       <div class="container text-center ">
         <div class="weatherNextDayContent d-flex flex-column">
           <div class="imgNextDay mt-2">
-            <img src="images/113.webp" alt="" class="col-2 my-3">
+            <img src="${weatherList.forecast.forecastday[2].day.condition.icon}" alt="" class="col-2 my-3">
             <h3 class="my-2 fw-bold">${weatherList.forecast.forecastday[2].day.maxtemp_c}<sup>o</sup>C</h3>
             <h6 class="my-3">${weatherList.forecast.forecastday[2].day.mintemp_c}<sup>o</sup></h6>
             <p class="my-4">${weatherList.forecast.forecastday[2].day.condition.text}</p>
