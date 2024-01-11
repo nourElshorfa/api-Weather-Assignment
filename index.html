@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body >
+
+
+
+
+<!-- Nav Bar -->
+  <nav class="navbar navbar-expand-lg bg-dark p-4">
+    <div class="container">
+      <a class="navbar-brand" href="#"><div class="logo  d-flex justify-content-between align-items-center">
+        <div class="logoImg me-3">
+          <img src="images/logo.weather.png" alt="">
+        </div>
+        <div class="logoContent mt-3 text-white">
+          <h5 class="fw-bold">Weather</h5>
+          <p class="font-color">tagline goes here</p>
+        </div>
+      </div></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse p-3" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+          <li class="nav-item mx-2 ">
+            <a class=" nav-link active" aria-current="page" href="#" id="sea">Home</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class=" nav-link" href="#">News</a>
+          </li>
+          <li class="nav-item  mx-2">
+            <a class=" nav-link" href="#">Live Cameras</a>
+          </li>
+          <li class="nav-item  mx-2">
+            <a class=" nav-link" href="#">Photos</a>
+          </li>
+          <li class="nav-item  mx-2">
+            <a class=" nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+<!-- siteInput Section -->
+  <section id="siteInput" >
+    <div class="container">
+      <form action="" class="position-relative">
+        <input type="text" placeholder="Find your Location..." class="form-control" id="searchInput">
+        <input type="button" value="Find" class="btn btn-info rounded-pill">
+      </form>
+    </div>
+  </section>
+    <!-- Site Content Section -->
+
+      <section id="siteContent" class="py-2">
+
+      <div class="container">
+
+        <div class="row g-0" id="rowData">
+         <div class="col-md-4">
+          <div class="item  text-white pb-5 ">
+            <div class="itemHeader d-flex justify-content-between p-1">
+              <div class="day">Sautrday</div>
+              <div class="date">6 January</div>
+            </div>
+            <div class="container ">
+              <div class="location p-2 mt-3">Cairo</div>
+              <div class="itemInner p-1 d-flex justify-content-evenly align-items-center">
+                <div class="degree fw-bolder">
+                 <h1>22<sup>o</sup>C</h1>
+                </div>
+                  <div class="weatherIcon">
+                    <img src="images/116.webp" alt="" class="w-100 ">
+                  </div>
+                </div>
+                <div class="weatherDesc ms-2">
+                  Partly Cloudy
+                </div>
+                <div class="spans  p-2 d-flex justify-content-between w-75 mt-2 ">
+                  <span><img src="images/icon-umberella@2x.png" alt="" class="w-25 me-1">20%</span>
+                  <span><img src="images/icon-wind@2x.png" alt="" class="w-25 me-1">18km/h</span>
+                  <span><img src="images/icon-compass@2x.png" alt="" class="w-25 me-1">East</span>
+                </div>
+
+            </div>
+            </div>
+            </div>
+        <div class="col-md-4">
+          <div class="item item1  text-white pb-5 ">
+            <div class="itemHeader2 text-center p-1">
+              <div class="day">Sautrday</div>
+            </div>
+            <div class="container text-center ">
+              <div class="weatherNextDayContent d-flex flex-column">
+                <div class="imgNextDay mt-2">
+                  <img src="images/113.webp" alt="" class="col-2 my-3">
+                  <h3 class="my-2 fw-bold">24.4<sup>o</sup>C</h3>
+                  <h6 class="my-3">14.6<sup>o</sup></h6>
+                  <p class="my-4">Sunny</p>
+                </div>
+              </div>
+            </div>
+           
+            </div>
+            </div>
+        <div class="col-md-4">
+          <div class="item   text-white pb-5 ">
+            <div class="itemHeader text-center p-1">
+              <div class="day">Sautrday</div>
+            </div>
+            <div class="container text-center ">
+              <div class="weatherNextDayContent d-flex flex-column">
+                <div class="imgNextDay mt-2">
+                  <img src="images/113.webp" alt="" class="col-2 my-3">
+                  <h3 class="my-2 fw-bold">24.4<sup>o</sup>C</h3>
+                  <h6 class="my-3">14.6<sup>o</sup></h6>
+                  <p class="my-4">Sunny</p>
+                </div>
+              </div>
+            </div>
+           
+            </div>
+            </div>
+            
+            </div> 
+        </div>
+        </section>
+
+<!-- footer Section -->
+
+<footer class="py-5">
+ <div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      <form class="emailInput position-relative">
+        <input type="email" placeholder="Enter your email to subscribe..." class="form-control">
+        <input type="button" value="Subscribe" class="btn btn-info rounded-pill">
+      </form>
+    </div>
+    <div class="col-md-3 offset-1 ">
+      <div class="socialLinks d-flex justify-content-center align-items-center">
+        <a href="#" class="mx-2 icon-circle text-decoration-none"> <i class="fa-brands fa-facebook-f "></i></a>
+        <a href="#" class="mx-2 icon-circle text-decoration-none"> <i class="fa-brands fa-twitter "></i></a>
+        <a href="#" class="mx-2 icon-circle text-decoration-none"> <i class="fa-brands fa-google-plus-g "></i></a>
+        <a href="#" class="mx-2 icon-circle text-decoration-none"> <i class="fa-brands fa-pinterest "></i></a>
+      </div>
+    </div>
+    <p class="mt-4 font-color">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+  </div>
+ </div>
+</footer>
+
+
+
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
